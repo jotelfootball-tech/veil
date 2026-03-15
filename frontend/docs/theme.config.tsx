@@ -1,11 +1,6 @@
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import React from 'react'
 
-// Stellar Brand Manual 2025
-// Gold #FDDA24 → HSL h≈51°, s≈98%
-// Near-Black #0F0F0F, Off-White #F6F7F8
-// Fonts: Lora (headings), Inter (body), Anton (accent labels)
-
 const Logo = () => (
   <span
     style={{
@@ -25,11 +20,11 @@ const config: DocsThemeConfig = {
   logo: <Logo />,
 
   project: {
-    link: 'https://github.com/stellar/invisible-wallet',
+    link: 'https://github.com/Miracle656/veil',
   },
 
   docsRepositoryBase:
-    'https://github.com/stellar/invisible-wallet/tree/main/frontend/docs',
+    'https://github.com/Miracle656/veil/tree/main/frontend/docs',
 
   footer: {
     text: (
@@ -38,10 +33,6 @@ const config: DocsThemeConfig = {
       </span>
     ),
   },
-
-  // Gold as primary accent (hue 51, sat 98)
-  primaryHue: 51,
-  primarySaturation: 98,
 
   useNextSeoProps() {
     return { titleTemplate: '%s – Veil Docs' }
@@ -63,13 +54,6 @@ const config: DocsThemeConfig = {
 
   sidebar: {
     defaultMenuCollapseLevel: 1,
-    titleComponent({ title }) {
-      return (
-        <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.875rem' }}>
-          {title}
-        </span>
-      )
-    },
   },
 
   toc: {
@@ -86,12 +70,12 @@ const config: DocsThemeConfig = {
   },
 
   banner: {
-    key: 'phase-3-v2',
+    key: 'phase-3-v3',
     text: (
       <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.82rem' }}>
         Phase 3 (Factory Contract) is open for contributors —{' '}
         <a
-          href="https://github.com/stellar/invisible-wallet/issues"
+          href="https://github.com/Miracle656/veil/issues"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: 'underline', color: '#FDDA24' }}
